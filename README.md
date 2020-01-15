@@ -5,7 +5,7 @@ A better, software driven, hackable fn / function key manager for linux.
 
 Mostly written in  Bash shell script and a lil-bit Python.
 
-(I hope) Its modular and portable to any desktop enviroment or window manager, but my main developement under Gnome at this thime :)
+(I hope) Its modular and portable to any desktop enviroment or window manager, but my main developement under Gnome at this time :)
 ## For:
 * Replace / bypass hardware solutions.
 * If hardware`s ACPI call based solution not work.
