@@ -1,7 +1,7 @@
 ## EARLY ACCESS, BETA STAGE
 
 # Virtual fn-key toggle
-A better software driven, hackable fn / function key manager for linux.
+A better, software driven, hackable fn / function key manager for linux.
 
 Mostly written in  Bash shell script and a lil-bit Python.
 
