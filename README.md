@@ -9,7 +9,7 @@ Mostly written in  Bash shell script and a lil-bit Python.
 ## For:
 * Replace / bypass hardware solutions.
 * If hardware`s ACPI call based solution not work.
-* Create fully custom beahviors.
+* Create fully custom keyboard shortcut beahviors.
 
 ## State toggle
 State can be toggle with arbitary shortcut combination.
