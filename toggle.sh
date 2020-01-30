@@ -19,10 +19,11 @@ function On(){
     for i in "${!customNameDB[@]}"
     do
         path="$custonPath${customNameDB[i]}"
+        shortcutCommandAbsolute="$(dirname $0)/commands/${shortcutCommandDB[i]}"
         
         dconf write "$path/name" "'""${shortcutNameDB[i]}""'"
         dconf write "$path/binding" "'""${shortcutBindingDB[i]}""'"
-        dconf write "$path/command" "'""${shortcutCommandDB[i]}""'"
+        dconf write "$path/command" "'""$shortcutCommandAbsolute""'"
 
         overallbindings="$overallbindings, '$path/'"
     done
