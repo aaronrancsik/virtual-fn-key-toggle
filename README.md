@@ -11,6 +11,8 @@ Mostly written in  Bash shell script and a lil-bit Python.
 * If hardware`s ACPI call based solution not work.
 * Create fully custom keyboard shortcut behaviors.
 
+[![Imgur](https://i.imgur.com/4JldRgEh.jpg)](https://i.imgur.com/4JldRgE.gifv)
+
 ## State toggle
 State can be toggle with arbitary shortcut combination.
 
