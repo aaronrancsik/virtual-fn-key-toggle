@@ -61,7 +61,7 @@ for d in "${displayDB[@]}"
 do
     if [[ $currentDisplay = $(echo $d | awk '{print $1}') ]]
     then
-        $(dirname "$0")/commands/$(echo $d | awk '{print $2}') $@
+        $(dirname "$0")/$(echo $d | awk '{print $2}') $@
     fi
 done
 
