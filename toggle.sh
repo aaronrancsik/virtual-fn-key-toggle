@@ -18,6 +18,14 @@ function cleanup {
 custonPath="/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/"
 
 function On(){
+
+    source $(dirname "$0")/config/xmodKey.conf
+    for i in "${keyMapDB[@]}"
+    do
+        xmodmap -e "$i"
+    done
+
+
     source $(dirname "$0")/config/keyList.conf
     overallbindings=$(gsettings get org.gnome.settings-daemon.plugins.media-keys custom-keybindings)
     overallbindings="${overallbindings::-1}"
@@ -38,6 +46,12 @@ function On(){
 }
 
 function Off(){
+    layouts=($(gsettings get org.gnome.desktop.input-sources sources | grep -Eoh "[\'][a-z]{2}[\']"))
+    IFS=","
+    layoutsConcated="${layouts[*]}"
+    IFS="$IFS_backup"
+    setxkbmap $layoutsConcated
+
     overallbindings=$(gsettings get org.gnome.settings-daemon.plugins.media-keys custom-keybindings)
     overallbindings="${overallbindings:1}"
     overallbindings="${overallbindings::-1}"
