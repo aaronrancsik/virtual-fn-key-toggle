@@ -15,10 +15,10 @@ function cleanup {
     fi
 }
 
-custonPath="/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/"
+
 
 function On(){
-
+    custonPath="/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/"
     source $(dirname "$0")/config/xmodKey.conf
     for i in "${keyMapDB[@]}"
     do
