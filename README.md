@@ -17,7 +17,7 @@ State can be toggle with arbitary shortcut combination.
 ## Locked state
 In this state all F keys can act as hotkey, or function key.
 All F key can use for Brighness and Volume controll and so on.
-Arbitary command bindable for keyboard keys via shortcuts _*and/or keyboard layout remap with xmodmap <- under developement_
+Arbitary command bindable for keyboard keys via shortcuts and/or keyboard layout remap with xmodmap
 
 ## Released state
 In this state all F key work as normal F1..F12 function keys.
