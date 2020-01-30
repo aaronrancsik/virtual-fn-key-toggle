@@ -81,15 +81,12 @@ if mkdir $LOCKDIR; then
     trap "cleanup" EXIT
 
     echo "Acquired lock, running"
-    # Processing starts here
     if test -f $doNotTouchDir/on
     then 
         # It is on, so lets turn off
-        
         rm $doNotTouchDir/on
         Off
         $(dirname "$0")/osd/osd.sh "FN KEY RELEASED" "changes-allow-symbolic"
-        
     else
         # Its is off, so lets turn on
         touch $doNotTouchDir/on
