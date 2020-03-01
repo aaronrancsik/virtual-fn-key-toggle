@@ -17,9 +17,3 @@ res=$(( res < 0 ? 0 : res ))
 
 #Show Gnome OSD
 $(dirname "$0")/../osd/osd.sh $res 'display-brightness-symbolic'
-
-
-
-
-
-
