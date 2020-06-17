@@ -31,7 +31,7 @@ This make possible to controll even external monitors hardware settings via DDC/
 and the same time, you can  controll laptop screen backlight with dbus.
 If your monitor hardware dose not support any of this option above, you can still use the `xrandr --gamma <xx> --brightness <xx>` option which is software based but better than nothing especially with OLED displays.
 
-## Gnome on screen dispay 
+## Gnome on screen display 
 Show Gnomes`s on screen display which indicate the brightness state in a OSD pop-up.
 
 ## Cotrib
